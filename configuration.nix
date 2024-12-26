@@ -5,6 +5,7 @@
   ...
 }:
 {
+  nixpkgs.config.allowUnfree = true;
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
     (modulesPath + "/profiles/qemu-guest.nix")
@@ -17,8 +18,6 @@
     efiInstallAsRemovable = true;
   };
 
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [ "x32-edit" ];
-
   nix.settings = {
     experimental-features = [
       "nix-command"
@@ -30,6 +29,7 @@
     pkgs.curl
     pkgs.gitMinimal
     pkgs.x32edit
+    pkgs.m32edit
     pkgs.vim
     pkgs.neovim
     pkgs.xlibinput-calibrator

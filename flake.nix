@@ -1,14 +1,16 @@
 {
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-  inputs.disko.url = "github:nix-community/disko";
-  inputs.disko.inputs.nixpkgs.follows = "nixpkgs";
-  inputs.nixos-facter-modules.url = "github:numtide/nixos-facter-modules";
-
+  inputs = {
+    nixpkgs.url = "github:ck3d/nixpkgs?ref=x32edit-43";
+    disko.url = "github:nix-community/disko";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
+    nixos-facter-modules.url = "github:numtide/nixos-facter-modules";
+  };
   outputs =
-    { nixpkgs
-    , disko
-    , nixos-facter-modules
-    , ...
+    {
+      nixpkgs,
+      disko,
+      nixos-facter-modules,
+      ...
     }:
     {
       # Use this for all other targets
