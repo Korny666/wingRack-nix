@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1732988076,
-        "narHash": "sha256-2uMaVAZn7fiyTUGhKgleuLYe5+EAAYB/diKxrM7g3as=",
+        "lastModified": 1753140376,
+        "narHash": "sha256-7lrVrE0jSvZHrxEzvnfHFE/Wkk9DDqb+mYCodI5uuB8=",
         "owner": "nix-community",
         "repo": "disko",
-        "rev": "2814a5224a47ca19e858e027f7e8bff74a8ea9f1",
+        "rev": "545aba02960caa78a31bd9a8709a0ad4b6320a5c",
         "type": "github"
       },
       "original": {
@@ -22,11 +22,11 @@
     },
     "nixos-facter-modules": {
       "locked": {
-        "lastModified": 1732288619,
-        "narHash": "sha256-zSQ2cR+NRJfHUVfkv+O6Wi53wXfzX8KHiO8fRfnvc0M=",
+        "lastModified": 1750412875,
+        "narHash": "sha256-uP9Xxw5XcFwjX9lNoYRpybOnIIe1BHfZu5vJnnPg3Jc=",
         "owner": "numtide",
         "repo": "nixos-facter-modules",
-        "rev": "862648589993a96480c2255197a28feea712f68f",
+        "rev": "14df13c84552a7d1f33c1cd18336128fbc43f920",
         "type": "github"
       },
       "original": {
@@ -37,16 +37,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1735117610,
-        "narHash": "sha256-sbXVIZ8NgGXGgj6jbi5fx5wZOJsH8N8MneMYUDvRGTo=",
-        "owner": "ck3d",
+        "lastModified": 1753991597,
+        "narHash": "sha256-+SZNvVZa0hnsRPZi/dZ7vjtZhgw9fvgw31QJz/kJw60=",
+        "owner": "Korny666",
         "repo": "nixpkgs",
-        "rev": "b6d3c8334ea4150f91ae0a8ab483711900e47ba7",
+        "rev": "606219a07bc4230807c9f0865e0dd0cb092b2c54",
         "type": "github"
       },
       "original": {
-        "owner": "ck3d",
-        "ref": "x32edit-43",
+        "owner": "Korny666",
+        "ref": "wingEdit",
         "repo": "nixpkgs",
         "type": "github"
       }

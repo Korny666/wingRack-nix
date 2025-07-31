@@ -29,7 +29,7 @@
     pkgs.curl
     pkgs.gitMinimal
     pkgs.x32edit
-    pkgs.m32edit
+    pkgs.wingEdit
     pkgs.vim
     pkgs.neovim
     pkgs.xlibinput-calibrator
@@ -77,5 +77,5 @@
     };
   };
 
-  system.stateVersion = "24.11";
+  system.stateVersion = "25.05";
 }

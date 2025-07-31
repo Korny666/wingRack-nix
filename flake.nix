@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:ck3d/nixpkgs?ref=x32edit-43";
+    nixpkgs.url = "github:Korny666/nixpkgs?ref=wingEdit";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
     nixos-facter-modules.url = "github:numtide/nixos-facter-modules";
