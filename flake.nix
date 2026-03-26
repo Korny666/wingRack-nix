@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:Korny666/nixpkgs?ref=wingEdit";
+    nixpkgs.url = "github:Korny666/nixpkgs?ref=wing-mix";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
     nixos-facter-modules.url = "github:numtide/nixos-facter-modules";

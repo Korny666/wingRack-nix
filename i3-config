@@ -190,6 +190,6 @@ bar {
 }
 
 #for_window [title="X32 EDIT.*"] fullscreen
-for_window [title="WING EDIT.*"] border none
+for_window [title="Mixing.*"] border none
 
-exec wing-edit
+exec mixing-station

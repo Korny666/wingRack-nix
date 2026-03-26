@@ -23,6 +23,10 @@
       "nix-command"
       "flakes"
     ];
+    trusted-users = [
+      "root"
+      "x32"
+    ];
   };
 
   environment.systemPackages = map lib.lowPrio [
@@ -30,6 +34,7 @@
     pkgs.gitMinimal
     pkgs.x32edit
     pkgs.wingEdit
+    pkgs.mixing-station
     pkgs.vim
     pkgs.neovim
     pkgs.xlibinput-calibrator
@@ -39,6 +44,7 @@
     root.openssh.authorizedKeys.keys = [
       # change this to your ssh key
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlarC74eYa7awOoGCcTihwuA6enoYcx59TAFxLlJr6b daniel@x1e"
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMqO04rNLXN+Qprs756uLCbQwkROj8JZj1BUCp2/gj+4 korny@nixdesktop"
     ];
 
     x32 = {

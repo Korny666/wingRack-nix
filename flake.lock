@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1769524058,
-        "narHash": "sha256-zygdD6X1PcVNR2PsyK4ptzrVEiAdbMqLos7utrMDEWE=",
+        "lastModified": 1773889306,
+        "narHash": "sha256-PAqwnsBSI9SVC2QugvQ3xeYCB0otOwCacB1ueQj2tgw=",
         "owner": "nix-community",
         "repo": "disko",
-        "rev": "71a3fc97d80881e91710fe721f1158d3b96ae14d",
+        "rev": "5ad85c82cc52264f4beddc934ba57f3789f28347",
         "type": "github"
       },
       "original": {
@@ -22,11 +22,11 @@
     },
     "nixos-facter-modules": {
       "locked": {
-        "lastModified": 1766558141,
-        "narHash": "sha256-Ud9v49ZPsoDBFuyJSQ2Mpw1ZgAH/aMwUwwzrVoetNus=",
+        "lastModified": 1773858690,
+        "narHash": "sha256-oW0/lC0oRG5H5LaK6Rmh9L1wmkn9TbenM4bXwnIEDKA=",
         "owner": "numtide",
         "repo": "nixos-facter-modules",
-        "rev": "e796d536e3d83de74267069e179dc620a608ed7d",
+        "rev": "139dcef4dfc97009629c445806f197883351ab4a",
         "type": "github"
       },
       "original": {
@@ -37,16 +37,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1770075496,
-        "narHash": "sha256-3FW2Uzih6Aspkvgx0CmV57aAnsJieyDvc9+prAmU2f4=",
+        "lastModified": 1774551423,
+        "narHash": "sha256-ZMhDTnzDWJvWMxDJKmmgySjpkP5SKNJ/OCMKScmD07I=",
         "owner": "Korny666",
         "repo": "nixpkgs",
-        "rev": "dbee3df012ac7b44c0a2a7d795ee84c577aa7c5e",
+        "rev": "eb4a5801b5145844319f0585e34f75dae9b81851",
         "type": "github"
       },
       "original": {
         "owner": "Korny666",
-        "ref": "wingEdit",
+        "ref": "wing-mix",
         "repo": "nixpkgs",
         "type": "github"
       }
