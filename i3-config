@@ -189,7 +189,6 @@ bar {
         status_command i3status
 }
 
-#for_window [title="X32 EDIT.*"] fullscreen
 for_window [title="Mixing.*"] border none
 
 exec mixing-station

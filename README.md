@@ -1,5 +1,8 @@
-# x32-nix
-x32 edit behringer nixos machine config
+# wingRack-nix
+
+wingRack edit behringer nixos machine config
+
+with mixing-station
 
 Use this for all other targets
 

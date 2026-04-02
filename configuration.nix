@@ -5,6 +5,16 @@
   ...
 }:
 {
+  networking.firewall = {
+    enable = true;
+    allowedUDPPorts = [
+      2223
+    ];
+    allowedTCPPorts = [
+      2222
+      8080
+    ];
+  };
   nixpkgs.config.allowUnfree = true;
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
@@ -25,20 +35,21 @@
     ];
     trusted-users = [
       "root"
-      "x32"
+      "wingRack"
     ];
   };
-
-  environment.systemPackages = map lib.lowPrio [
-    pkgs.curl
-    pkgs.gitMinimal
-    pkgs.x32edit
-    pkgs.wingEdit
-    pkgs.mixing-station
-    pkgs.vim
-    pkgs.neovim
-    pkgs.xlibinput-calibrator
-  ];
+  programs.zsh.enable = true;
+  environment.systemPackages =
+    with pkgs;
+    map lib.lowPrio [
+      curl
+      gitMinimal
+      wingEdit
+      mixing-station
+      vim
+      neovim
+      xlibinput-calibrator
+    ];
 
   users.users = {
     root.openssh.authorizedKeys.keys = [
@@ -47,10 +58,11 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMqO04rNLXN+Qprs756uLCbQwkROj8JZj1BUCp2/gj+4 korny@nixdesktop"
     ];
 
-    x32 = {
+    wingRack = {
       isNormalUser = true;
       extraGroups = [ "wheel" ];
       hashedPassword = "$y$j9T$xnLgqOHMUHdmKH0h8606B.$7e9iyQuPafHK9I3STaT/OyYx1SEbthvIctZPEZ3pSTC";
+      shell = pkgs.zsh;
     };
   };
 
@@ -79,7 +91,7 @@
       '';
     displayManager.autoLogin = {
       enable = true;
-      user = "x32";
+      user = "wingRack";
     };
   };
 

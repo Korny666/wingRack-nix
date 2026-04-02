@@ -3,20 +3,22 @@
     nixpkgs.url = "github:Korny666/nixpkgs?ref=wing-mix";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
-    nixos-facter-modules.url = "github:numtide/nixos-facter-modules";
+    my-nvim = {
+      url = "github:korny666/nvim-nix";
+    };
   };
   outputs =
     {
       nixpkgs,
       disko,
-      nixos-facter-modules,
+      my-nvim,
       ...
     }:
     {
       # Use this for all other targets
       #
       # Fist time without hardware-configuration:
-      # nixos-anywhere --flake .#nixos --generate-hardware-config nixos-generate-config ./hardware-configuration.nix <hostname>
+      # nixos-anywhere --flake .#nixos --generate-hardware-config nixos-generatn e-config ./hardware-configuration.nix <hostname>
       #
       # full reinstall with existing hardware-configuration:
       # nixos-anywhere --flake .#nixos <hostname>
@@ -26,6 +28,7 @@
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          my-nvim.nixosModules.default
           disko.nixosModules.disko
           ./configuration.nix
           ./hardware-configuration.nix
